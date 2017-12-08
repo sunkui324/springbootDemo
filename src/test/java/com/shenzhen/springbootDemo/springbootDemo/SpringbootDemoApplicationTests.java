@@ -32,6 +32,7 @@ public class SpringbootDemoApplicationTests {
             mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
                     .andExpect(status().isOk())
                     .andExpect(content().string(equalTo("Hello World")));
+
         } catch (Exception e) {
             e.printStackTrace();
         }
