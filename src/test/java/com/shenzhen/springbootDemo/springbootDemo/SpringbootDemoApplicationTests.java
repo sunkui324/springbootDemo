@@ -32,7 +32,7 @@ public class SpringbootDemoApplicationTests {
             mvc.perform(MockMvcRequestBuilders.get("/hello").accept(MediaType.APPLICATION_JSON))
                     .andExpect(status().isOk())
                     .andExpect(content().string(equalTo("Hello World")));
-
+            //添加一个信息到 github 上
         } catch (Exception e) {
             e.printStackTrace();
         }
